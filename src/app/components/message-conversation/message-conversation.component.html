@@ -1,0 +1,10 @@
+<div class="row">
+  <ul *ngIf="messages">
+    <li *ngFor="let message of messages">
+      <app-message [message]="message"></app-message>
+    </li>
+  </ul>
+</div>
+<div class="row fixed-bottom">
+  <app-message-input></app-message-input>
+</div>
